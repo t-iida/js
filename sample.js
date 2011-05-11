@@ -20,7 +20,6 @@ for(idx = 0; idx < 10; idx++) {
     collection.insert(createDoc(idx));    
 }
 
-// var document = BSON.from(collection.find());
 var documents = collection.find();
 
 while(documents.hasNext()) {
@@ -36,14 +35,4 @@ while(documents.hasNext()) {
   System.out.println("");
 }
 
-
-
-
-// Print them all.
-//while(documents.hasNext()) {
-//  var object = BSON.from(documents.next());
-//  System.out.print("name = " + object.name);
-//  System.out.print(", age = " + object.age);
-//  System.out.println(", '" + eval(object.sayName)() + "'");
-//}
 // -- End of script.
